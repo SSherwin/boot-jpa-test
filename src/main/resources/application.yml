@@ -1,0 +1,24 @@
+server:
+    port: 8080
+---
+
+spring:
+    profiles: dev
+    jpa:
+        show-sql: true
+        hibernate:
+           ddl-auto: create-drop
+    datasource:
+        url: jdbc:hsqldb:mem://localhost/demodata
+        username: SA
+        password:
+        driverClassName: org.hsqldb.jdbc.JDBCDriver
+        initialize: true
+        platform: dev
+        
+    thymeleaf:
+       cache: false
+server:
+    port: 8080
+
+    
