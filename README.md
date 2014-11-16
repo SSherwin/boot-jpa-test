@@ -10,7 +10,7 @@ call to update the data.
 However This example now works and returns the data using hypermedia-driven interface so that all the RESTful
 endpoints can be discovered using curl (or whatever REST client you are using).
 
-
+'''
 $ curl http://localhost:8080/
 {
   "_links" : {
@@ -176,7 +176,9 @@ $ curl http://localhost:8080/users/2/roles
   }
 }
 
+'''
+
 The Actuator shows information about the running application.
-http://localhost:8080/env
-http://localhost:8080/health
-http://localhost:8080/metrics
+ * http://localhost:8080/env
+ * http://localhost:8080/health
+ *http://localhost:8080/metrics
